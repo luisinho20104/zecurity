@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Zecurity</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: #e2e8f0;
+    }
+
+    .form-container {
+      background: #1e293b;
+      width: 100%;
+      max-width: 440px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #334155;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35); /* sombra básica no container */
+    }
+
+    .header {
+      background: linear-gradient(to right, #1e40af, #1d4ed8);
+      color: white;
+      padding: 32px 25px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      letter-spacing: 0.4px;
+    }
+
+    .header p {
+      font-size: 15px;
+      opacity: 0.90;
+      font-weight: 400;
+    }
+
+    .form-content {
+      padding: 32px 28px 28px;
+    }
+
+    .campo {
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #cbd5e1;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    input {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1px solid #475569;
+      border-radius: 8px;
+      font-size: 15px;
+      background: #0f172a;
+      color: #e2e8f0;
+      transition: all 0.2s ease;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.2); /* sombra interna leve */
+    }
+
+    input:focus {
+      border-color: #60a5fa;
+      background: #1e293b;
+      box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15); /* foco mais discreto */
+      outline: none;
+    }
+
+    input::placeholder {
+      color: #64748b;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(to right, #1d4ed8, #3b82f6);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      box-shadow: 0 2px 8px rgba(29, 78, 216, 0.35); /* sombra básica e suave */
+      margin-top: 12px;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #1e3a8a, #2563eb);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(29, 78, 216, 0.4);
+    }
+
+    button:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 6px rgba(29, 78, 216, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+  
+    <div class="header">
+      <h1>Cadastro</h1>
+      <p>Cadastre-se agora no Zecurity</p>
+    </div>
+
+    <div class="form-content">
+      <form>
+        <div class="campo">
+          <label>Nome completo</label>
+          <input type="text" placeholder="Seu nome completo" required>
+        </div>
+
+        <div class="campo">
+          <label>Telefone / WhatsApp</label>
+          <input type="tel" placeholder="(41) 99999-9999" required>
+        </div>
+
+        <div class="campo">
+          <label>Email</label>
+          <input type="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  
+  </div>
+
+</body>
+</html>
